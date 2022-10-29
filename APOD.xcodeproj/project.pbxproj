@@ -17,6 +17,10 @@
 		B01F733C290C973C00E60051 /* APODTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F733B290C973C00E60051 /* APODTests.swift */; };
 		B01F7346290C973C00E60051 /* APODUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F7345290C973C00E60051 /* APODUITests.swift */; };
 		B01F7348290C973C00E60051 /* APODUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F7347290C973C00E60051 /* APODUITestsLaunchTests.swift */; };
+		B01F735B290C987F00E60051 /* PlaneratyInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F735A290C987F00E60051 /* PlaneratyInformation.swift */; };
+		B01F735F290C9CF400E60051 /* ApodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F735D290C9CF400E60051 /* ApodTableViewCell.swift */; };
+		B01F7360290C9CF400E60051 /* ApodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01F735E290C9CF400E60051 /* ApodTableViewCell.xib */; };
+		B01F7362290CA0E000E60051 /* ApodRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F7361290CA0E000E60051 /* ApodRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		B01F7341290C973C00E60051 /* APODUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APODUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B01F7345290C973C00E60051 /* APODUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODUITests.swift; sourceTree = "<group>"; };
 		B01F7347290C973C00E60051 /* APODUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B01F735A290C987F00E60051 /* PlaneratyInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneratyInformation.swift; sourceTree = "<group>"; };
+		B01F735D290C9CF400E60051 /* ApodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodTableViewCell.swift; sourceTree = "<group>"; };
+		B01F735E290C9CF400E60051 /* ApodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ApodTableViewCell.xib; sourceTree = "<group>"; };
+		B01F7361290CA0E000E60051 /* ApodRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +109,9 @@
 		B01F7320290C973A00E60051 /* APOD */ = {
 			isa = PBXGroup;
 			children = (
+				B01F7354290C976500E60051 /* HomeAPOD */,
 				B01F7321290C973A00E60051 /* AppDelegate.swift */,
 				B01F7323290C973A00E60051 /* SceneDelegate.swift */,
-				B01F7325290C973A00E60051 /* ViewController.swift */,
-				B01F7327290C973A00E60051 /* Main.storyboard */,
 				B01F732D290C973C00E60051 /* Assets.xcassets */,
 				B01F732F290C973C00E60051 /* LaunchScreen.storyboard */,
 				B01F7332290C973C00E60051 /* Info.plist */,
@@ -128,6 +135,59 @@
 				B01F7347290C973C00E60051 /* APODUITestsLaunchTests.swift */,
 			);
 			path = APODUITests;
+			sourceTree = "<group>";
+		};
+		B01F7354290C976500E60051 /* HomeAPOD */ = {
+			isa = PBXGroup;
+			children = (
+				B01F7358290C978600E60051 /* Repository */,
+				B01F7357290C977D00E60051 /* ViewModel */,
+				B01F7356290C977900E60051 /* View */,
+				B01F7355290C977300E60051 /* Model */,
+			);
+			path = HomeAPOD;
+			sourceTree = "<group>";
+		};
+		B01F7355290C977300E60051 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B01F735A290C987F00E60051 /* PlaneratyInformation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B01F7356290C977900E60051 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B01F7327290C973A00E60051 /* Main.storyboard */,
+				B01F7325290C973A00E60051 /* ViewController.swift */,
+				B01F735C290C9CA900E60051 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B01F7357290C977D00E60051 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B01F7358290C978600E60051 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				B01F7361290CA0E000E60051 /* ApodRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		B01F735C290C9CA900E60051 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B01F735D290C9CF400E60051 /* ApodTableViewCell.swift */,
+				B01F735E290C9CF400E60051 /* ApodTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B01F7331290C973C00E60051 /* LaunchScreen.storyboard in Resources */,
+				B01F7360290C9CF400E60051 /* ApodTableViewCell.xib in Resources */,
 				B01F732E290C973C00E60051 /* Assets.xcassets in Resources */,
 				B01F7329290C973A00E60051 /* Main.storyboard in Resources */,
 			);
@@ -262,8 +323,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B01F7326290C973A00E60051 /* ViewController.swift in Sources */,
+				B01F735F290C9CF400E60051 /* ApodTableViewCell.swift in Sources */,
+				B01F7362290CA0E000E60051 /* ApodRepository.swift in Sources */,
 				B01F732C290C973A00E60051 /* APOD.xcdatamodeld in Sources */,
 				B01F7322290C973A00E60051 /* AppDelegate.swift in Sources */,
+				B01F735B290C987F00E60051 /* PlaneratyInformation.swift in Sources */,
 				B01F7324290C973A00E60051 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

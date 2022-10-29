@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  APOD
 //
-//  Created by Wilson David Molina Lozano on 28/10/22.
+//  Created byJuan Diego Marin on 28/10/22.
 //
 
 import UIKit

@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  APOD
 //
-//  Created by Wilson David Molina Lozano on 28/10/22.
+//  Created by Juan Diego Marin on 28/10/22.
 //
 
 import UIKit
