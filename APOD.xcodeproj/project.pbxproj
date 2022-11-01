@@ -21,6 +21,11 @@
 		B01F735F290C9CF400E60051 /* ApodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F735D290C9CF400E60051 /* ApodTableViewCell.swift */; };
 		B01F7360290C9CF400E60051 /* ApodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01F735E290C9CF400E60051 /* ApodTableViewCell.xib */; };
 		B01F7362290CA0E000E60051 /* ApodRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F7361290CA0E000E60051 /* ApodRepository.swift */; };
+		B0F3BBF62910505D00C488FE /* ApodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F3BBF52910505D00C488FE /* ApodViewModel.swift */; };
+		B0F3BBFD29108E6600C488FE /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F3BBFC29108E6600C488FE /* UIImageViewExtensions.swift */; };
+		B0F3BBFF2910917100C488FE /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F3BBFE2910917100C488FE /* ImageService.swift */; };
+		B0F3BC012910990F00C488FE /* NetworkingValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F3BC002910990F00C488FE /* NetworkingValidator.swift */; };
+		B0F3BC032910991F00C488FE /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F3BC022910991F00C488FE /* Thread.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,11 @@
 		B01F735D290C9CF400E60051 /* ApodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodTableViewCell.swift; sourceTree = "<group>"; };
 		B01F735E290C9CF400E60051 /* ApodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ApodTableViewCell.xib; sourceTree = "<group>"; };
 		B01F7361290CA0E000E60051 /* ApodRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodRepository.swift; sourceTree = "<group>"; };
+		B0F3BBF52910505D00C488FE /* ApodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodViewModel.swift; sourceTree = "<group>"; };
+		B0F3BBFC29108E6600C488FE /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
+		B0F3BBFE2910917100C488FE /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		B0F3BC002910990F00C488FE /* NetworkingValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingValidator.swift; sourceTree = "<group>"; };
+		B0F3BC022910991F00C488FE /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +119,7 @@
 		B01F7320290C973A00E60051 /* APOD */ = {
 			isa = PBXGroup;
 			children = (
+				B0F3BBF729106FE200C488FE /* Utils */,
 				B01F7354290C976500E60051 /* HomeAPOD */,
 				B01F7321290C973A00E60051 /* AppDelegate.swift */,
 				B01F7323290C973A00E60051 /* SceneDelegate.swift */,
@@ -169,6 +180,7 @@
 		B01F7357290C977D00E60051 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B0F3BBF52910505D00C488FE /* ApodViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -188,6 +200,41 @@
 				B01F735E290C9CF400E60051 /* ApodTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		B0F3BBF729106FE200C488FE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B0F3BBF82910718000C488FE /* Utils */,
+				B0F3BBFA291071AF00C488FE /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B0F3BBF82910718000C488FE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B0F3BBFE2910917100C488FE /* ImageService.swift */,
+				B0F3BC002910990F00C488FE /* NetworkingValidator.swift */,
+				B0F3BC022910991F00C488FE /* Thread.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B0F3BBFA291071AF00C488FE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B0F3BBFB291071C800C488FE /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B0F3BBFB291071C800C488FE /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B0F3BBFC29108E6600C488FE /* UIImageViewExtensions.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,8 +370,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B01F7326290C973A00E60051 /* ViewController.swift in Sources */,
+				B0F3BBF62910505D00C488FE /* ApodViewModel.swift in Sources */,
+				B0F3BC012910990F00C488FE /* NetworkingValidator.swift in Sources */,
 				B01F735F290C9CF400E60051 /* ApodTableViewCell.swift in Sources */,
+				B0F3BBFF2910917100C488FE /* ImageService.swift in Sources */,
 				B01F7362290CA0E000E60051 /* ApodRepository.swift in Sources */,
+				B0F3BBFD29108E6600C488FE /* UIImageViewExtensions.swift in Sources */,
+				B0F3BC032910991F00C488FE /* Thread.swift in Sources */,
 				B01F732C290C973A00E60051 /* APOD.xcdatamodeld in Sources */,
 				B01F7322290C973A00E60051 /* AppDelegate.swift in Sources */,
 				B01F735B290C987F00E60051 /* PlaneratyInformation.swift in Sources */,
