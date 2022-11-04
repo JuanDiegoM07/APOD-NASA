@@ -20,8 +20,6 @@ extension UIImageView {
             return
         }
         downloaded(from: url, placeHolder: placeHolder, contentMode: mode)
-        
-        
     }
     
     func downloaded(from url: URL,

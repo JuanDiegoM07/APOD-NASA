@@ -10,11 +10,8 @@ import UIKit
 class ApodTableViewCell: UITableViewCell {
 
     @IBOutlet weak var planetImage: UIImageView!
-    
     @IBOutlet weak var nameLabel: UILabel!
-    
     @IBOutlet weak var descriptionLabel: UILabel!
-    
     var planet: PlaneratyInformation? {
         didSet {
             setup()
@@ -30,16 +27,15 @@ class ApodTableViewCell: UITableViewCell {
     }
     
     private func setup() {
+    
         nameLabel.text = planet?.copyright
         descriptionLabel.text = planet?.explanation
         if let url = planet?.url {
             planetImage.downloaded(from: url, placeHolder: nil)
+             if let url2 = planet?.hdurl {
+                 planetImage.downloaded(from: url2, placeHolder: nil)
+             }
         }
-        
-        if let url2 = planet?.hdurl {
-            planetImage.downloaded(from: url2, placeHolder: nil)
-        }
-
     }
 
 }
